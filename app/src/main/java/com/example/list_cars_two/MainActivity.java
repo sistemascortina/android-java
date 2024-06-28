@@ -8,28 +8,36 @@ import android.widget.ArrayAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends Activity {
-
+/*
     private TextView lblEtiqueta;
     private ListView lstCars;
+*/
+    ArrayList<String> name = new ArrayList<>(),price= new ArrayList<>(),brand = new ArrayList<>(), kilometer = new ArrayList<>(), motor = new ArrayList<>(), guaraty = new ArrayList<>();
+    ListView ListViewCars;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        /*setContentView(R.layout.activity_main);
 
         lblEtiqueta = (TextView)findViewById(R.id.LblDetail);
-        lstCars = (ListView)findViewById(R.id.LstCars);
-
+        lstCars = (ListView)findViewById(R.id.LstCars);*/
+/*
         final String[][] cars = new
                 String [][]{
                         {"Porche", "Caiman", "2024","1000000"},
                         {"Mercedez", "AMG 66", "2020", "1500000"},
                 {"BMW", "X5", "2023", "1030000"},
-                {"Ford", "Mustang", "2022", "2500000"}};
+                {"Ford", "Mustang", "2022", "2500000"}};*/
 
       /*  ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, cars);
         lstCars.setAdapter(adaptador);
