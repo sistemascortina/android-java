@@ -23,7 +23,6 @@ public class CarsDB extends SQLiteOpenHelper {
 
     }
 
-    @Override
     public long insertData(String carName, String carPrice, String carBrand, String carMotor, String carYear, String carKilometer, String carGuaranty) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -38,7 +37,7 @@ public class CarsDB extends SQLiteOpenHelper {
         cV.put("brand", carBrand);
 
         long result = db.insert(CarsConstant.carsTable, null, cV);
-
+        return result;
     }
 
     public Cursor rawQuery(String sql, String [] parameters){
