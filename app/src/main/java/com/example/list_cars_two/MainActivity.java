@@ -24,10 +24,7 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-/*
-    private TextView lblEtiqueta;
-    private ListView lstCars;
-*/
+
     ArrayList<String> name = new ArrayList<>(),price= new ArrayList<>(),brand = new ArrayList<>(), kilometer = new ArrayList<>(), motor = new ArrayList<>(), guaraty = new ArrayList<>(), year = new ArrayList<>();
     ListView ListViewCar;
     ArrayList<CarFields> items = new ArrayList<>();
@@ -72,10 +69,13 @@ public class MainActivity extends AppCompatActivity {
         ListViewCar.setAdapter(adapter);
 
 
-        ListViewCar.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        ListViewCar.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
+
                 CarFields c = items.get(i);
                 registerForContextMenu(ListViewCar);
+
             }
         });
 
