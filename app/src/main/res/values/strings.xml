@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">List-Cars-Two</string>
+    <string name="name">Name</string>
+    <string name="price">Price</string>
+    <string name="brand">Brand</string>
+    <string name="year">Year</string>
 </resources>

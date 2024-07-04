@@ -10,6 +10,7 @@ public class CarsConstant {
     public static final String carsKilometer = "Kilometer";
     public static final String carsMotor = "Motor";
     public static final String carsGuaranty = "Guaranty";
+    public static final String carsPicture = "Picture";
     public static final String createTable = "CREATE TABLE " + carsTable + "(" + carsName + " TEXT, "  + carsPrice + " TEXT, "  + carsYear + " TEXT, " + carsBrand + " TEXT, " + carsKilometer + " TEXT, " + carsMotor + " TEXT, " + carsGuaranty + " TEXT) ";
 
 }

@@ -11,6 +11,7 @@ public class CarFields {
 
 
 
+
     public CarFields(String name, String price, String brand,String year, String motor, String kilometer, String guaranty) {
         this.name = name;
         this.price = price;
@@ -19,6 +20,7 @@ public class CarFields {
         this.motor = motor;
         this.kilometer = kilometer;
         this.guaranty = guaranty;
+
     }
 
     public String getName() {
@@ -76,4 +78,6 @@ public class CarFields {
     public void setGuaranty(String guaranty) {
         this.guaranty = guaranty;
     }
+
+
 }

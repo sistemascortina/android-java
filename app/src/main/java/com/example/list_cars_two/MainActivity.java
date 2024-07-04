@@ -26,6 +26,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<String> name = new ArrayList<>(),price= new ArrayList<>(),brand = new ArrayList<>(), kilometer = new ArrayList<>(), motor = new ArrayList<>(), guaraty = new ArrayList<>(), year = new ArrayList<>();
+    int [] picture = {R.drawable.mustang, R.drawable.amg, R.drawable.bmw};
     ListView ListViewCar;
     ArrayList<CarFields> items = new ArrayList<>();
 

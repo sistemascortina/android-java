@@ -1,39 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+        android:id="@+id/cardImage"
+        android:layout_width="142dp"
+        android:layout_height="148dp"
+        android:layout_weight="30"
+        android:padding="3dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="MissingConstraints" />
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="117dp"
+        android:layout_width="250dp"
+        android:layout_height="151dp"
+        android:layout_weight="90"
+        android:padding="1.5dp"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="13dp">
 
         <TextView
             android:id="@+id/lblName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:text="@string/name" />
 
         <TextView
             android:id="@+id/lblPrice"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/lblYear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="33dp"
+            android:gravity="center|left"
+            android:text="@string/price" />
 
         <TextView
             android:id="@+id/lblBrand"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="31dp"
+            android:gravity="center|left"
+            android:text="@string/brand" />
+
+        <TextView
+            android:id="@+id/lblYear"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center|left"
+            android:text="@string/year" />
+
     </LinearLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
